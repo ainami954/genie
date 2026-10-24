@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スタッフ募集｜Genie beauty design works（ご提案用サンプル）</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FBF9F6;
+  --sand: #F3EEE8;
+  --beige: #E6DCD0;
+  --rule: #DDD3C7;
+  --ink: #3B3632;
+  --ink-2: #534C46;
+  --ink-3: #6E655D;
+  --teal: #3F7C82;
+  --teal-soft: #E3EEEE;
+  --serif-en: "Cormorant Garamond", "Shippori Mincho", serif;
+  --mincho: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --gothic: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink-2);
+  font-family: var(--gothic); font-size: 16px; line-height: 1.95;
+  font-feature-settings: "palt" 1;
+}
+a { color: var(--teal); }
+a:focus-visible, input:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+
+.sample-bar { background: var(--ink); color: #FFFFFF; font-size: 12.5px; line-height: 1.7; text-align: center; padding: 8px 16px; }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.narrow { max-width: 720px; margin: 0 auto; }
+
+/* ヘッダー */
+.site-header { border-bottom: 1px solid var(--rule); background: var(--paper); }
+.site-header .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding-top: 16px; padding-bottom: 16px; }
+.brand { margin: 0; font-family: var(--serif-en); color: var(--ink); line-height: 1.2; }
+.brand-name { font-size: 28px; letter-spacing: .04em; }
+.brand-sub { display: block; font-size: 13px; letter-spacing: .14em; color: var(--ink-3); }
+.header-tag { font-size: 13px; letter-spacing: .2em; color: var(--ink-3); }
+
+/* ヒーロー */
+.hero { background: var(--sand); padding: 72px 0 80px; text-align: center; }
+.hero-en { margin: 0; font-family: var(--serif-en); font-weight: 400; font-size: clamp(54px, 13vw, 112px); letter-spacing: .14em; line-height: 1; color: var(--ink); margin-right: -.14em; }
+.hero-title { margin: 30px 0 0; font-family: var(--mincho); font-weight: 600; font-size: clamp(24px, 5vw, 38px); letter-spacing: .1em; line-height: 1.7; color: var(--ink); text-wrap: balance; }
+.hero-lead { margin: 22px auto 0; max-width: 34em; font-size: 15.5px; color: var(--ink-2); text-wrap: pretty; }
+.hero-roles { margin: 28px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; list-style: none; padding: 0; }
+.hero-roles li { padding: 4px 16px; border: 1px solid var(--ink-3); font-size: 14px; color: var(--ink); letter-spacing: .06em; }
+
+/* 写真の仮枠 */
+.photo-slot {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  background: repeating-linear-gradient(135deg, #EEE6DC 0 14px, #E8DFD4 14px 28px);
+  color: #7A6E63; font-size: 13.5px; line-height: 1.6; padding: 16px; border: 1px dashed #CDBFB0;
+}
+
+/* セクション */
+.section { padding: 80px 0; }
+.section.tint { background: var(--sand); }
+.head { text-align: center; margin-bottom: 44px; }
+.head-en { margin: 0; font-family: var(--serif-en); font-size: 18px; letter-spacing: .3em; color: var(--ink-3); }
+.head-title { margin: 6px 0 0; font-family: var(--mincho); font-weight: 600; font-size: clamp(22px, 4vw, 30px); letter-spacing: .08em; line-height: 1.6; color: var(--ink); text-wrap: balance; }
+
+/* 想い */
+.story { display: grid; gap: 36px; align-items: center; }
+@media (min-width: 780px) { .story { grid-template-columns: 1fr 1.1fr; gap: 56px; } }
+.story .photo-slot { aspect-ratio: 4 / 5; }
+.story p { margin: 0 0 1.1em; text-wrap: pretty; }
+.story .quote { font-family: var(--mincho); font-size: 20px; color: var(--ink); letter-spacing: .06em; line-height: 1.9; }
+
+/* 大事にしていること */
+.values { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+.value { background: var(--paper); padding: 32px 28px; }
+.value h3 { margin: 0 0 12px; font-family: var(--mincho); font-weight: 600; font-size: 19px; color: var(--ink); letter-spacing: .06em; line-height: 1.6; }
+.value p { margin: 0; font-size: 15px; text-wrap: pretty; }
+.value .em { display: block; font-family: var(--serif-en); font-size: 15px; letter-spacing: .2em; color: var(--teal); margin-bottom: 4px; }
+
+/* 働き方 */
+.plans { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+.plan { background: #FFFFFF; border: 1px solid var(--rule); display: flex; flex-direction: column; }
+.plan-head { padding: 22px 24px 18px; border-bottom: 1px solid var(--rule); }
+.plan-en { margin: 0; font-family: var(--serif-en); font-size: 15px; letter-spacing: .2em; color: var(--ink-3); }
+.plan-head h3 { margin: 2px 0 0; font-family: var(--mincho); font-weight: 600; font-size: 22px; color: var(--ink); letter-spacing: .06em; }
+.plan-for { margin: 8px 0 0; font-size: 14px; color: var(--ink-2); }
+.plan-pay { padding: 18px 24px 0; font-family: var(--mincho); font-size: 19px; color: var(--teal); font-weight: 600; line-height: 1.6; }
+.plan dl { margin: 0; padding: 6px 24px 24px; }
+.plan dt { margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--ink-3); letter-spacing: .04em; }
+.plan dd { margin: 2px 0 0; font-size: 14.5px; line-height: 1.8; color: var(--ink); }
+.note { margin: 18px 0 0; font-size: 13px; color: var(--ink-3); text-align: center; }
+
+/* 報酬シミュレーション */
+.sim { background: #FFFFFF; border: 1px solid var(--rule); padding: 32px 28px; }
+.sim-q { margin: 0 0 4px; font-family: var(--mincho); font-weight: 600; font-size: 19px; color: var(--ink); text-align: center; }
+.sim-sub { margin: 0 0 26px; font-size: 14px; text-align: center; color: var(--ink-3); }
+.sim label { display: block; font-size: 14px; font-weight: 700; color: var(--ink); }
+.sim-value { display: block; font-family: var(--mincho); font-size: 30px; color: var(--ink); margin: 2px 0 10px; }
+.sim input[type="range"] { width: 100%; accent-color: var(--teal); height: 32px; }
+.sim-scale { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--ink-3); }
+.sim-results { margin-top: 26px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
+.result { border: 1px solid var(--rule); padding: 18px 20px; background: var(--paper); }
+.result.best { border-color: var(--teal); background: var(--teal-soft); }
+.result-name { font-size: 14px; font-weight: 700; color: var(--ink); }
+.result-formula { font-size: 12.5px; color: var(--ink-3); }
+.result-amount { display: block; margin-top: 6px; font-family: var(--mincho); font-size: 26px; color: var(--ink); }
+.result-badge { display: inline-block; margin-left: 6px; padding: 0 8px; font-size: 12px; background: var(--teal); color: #FFFFFF; vertical-align: 2px; }
+.sim-msg { margin: 20px 0 0; font-size: 14.5px; color: var(--ink); text-align: center; text-wrap: pretty; }
+.sim-fine { margin: 14px 0 0; font-size: 12.5px; color: var(--ink-3); line-height: 1.8; }
+
+/* 環境 */
+.perks { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px 28px; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+.perks li { padding: 12px 0 12px 22px; border-bottom: 1px solid var(--rule); position: relative; font-size: 15px; color: var(--ink); }
+.perks li::before { content: ""; position: absolute; left: 2px; top: 25px; width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+
+/* スタッフ */
+.staff { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }
+.staff .photo-slot { aspect-ratio: 1 / 1; }
+
+/* 人物像 */
+.wants { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.wants li { padding: 16px 20px; background: #FFFFFF; border: 1px solid var(--rule); font-size: 15.5px; color: var(--ink); }
+
+/* 応募 */
+.cta { background: var(--ink); color: #F3EEE8; text-align: center; }
+.cta .head-en { color: #CFC5BA; }
+.cta .head-title { color: #FFFFFF; }
+.cta-lead { margin: 0 auto 30px; max-width: 34em; font-size: 15.5px; text-wrap: pretty; }
+.btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 30px; font-size: 15px; font-weight: 700; letter-spacing: .04em; text-decoration: none; }
+.btn-light { background: #FFFFFF; color: var(--ink); }
+.btn-line { border: 1px solid #FFFFFF; color: #FFFFFF; }
+.btn:hover { opacity: .88; }
+.cta-info { margin: 30px 0 0; font-size: 14px; line-height: 1.9; color: #E2DAD1; }
+
+.site-footer { text-align: center; padding: 36px 20px 44px; border-top: 1px solid var(--rule); }
+.site-footer .brand-name { font-size: 24px; }
+.site-footer p { margin: 8px 0 0; font-size: 13px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+
+<div class="sample-bar">これは採用ページのご提案用サンプルです。写真は仮の枠、文章と条件は公開されている求人情報・Instagramの投稿をもとにした仮の原稿です。</div>
+
+<header class="site-header">
+  <div class="container">
+    <p class="brand"><span class="brand-name">Genie</span><span class="brand-sub">— beauty design works —</span></p>
+    <span class="header-tag">スタッフ募集</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <p class="hero-en" aria-hidden="true">RECRUIT</p>
+      <h1 class="hero-title" id="hero-title">「こんな感じ」を、<br>一緒にカタチに。</h1>
+      <p class="hero-lead">新潟市江南区亀田で8年目を迎えた、まつエク・アイブロウ・WAX脱毛・ネイルのサロンGenieです。一緒に働く仲間を募集しています。</p>
+      <ul class="hero-roles" aria-label="募集職種">
+        <li>アイデザイナー</li>
+        <li>ネイリスト</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="story-title">
+    <div class="container">
+      <div class="head">
+        <p class="head-en">OUR WORK</p>
+        <h2 class="head-title" id="story-title">Genieの仕事</h2>
+      </div>
+      <div class="story">
+        <div class="photo-slot">サロンの写真<br>（店内・施術の様子など）</div>
+        <div>
+          <p>お客様は、やりたいことをうまく言葉にできないことがあります。「こんな感じで」「おまかせで」。</p>
+          <p class="quote">その“こんな感じ”は、まだ本人にも形になっていない願いなんだと思います。</p>
+          <p>それを一緒に探して、カタチにする。Genieの仕事は、そこにあると思っています。</p>
+          <p>目指しているのは、お客様が大切な人に紹介したくなるサロンです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint" aria-labelledby="values-title">
+    <div class="container">
+      <div class="head">
+        <p class="head-en">VALUES</p>
+        <h2 class="head-title" id="values-title">大事にしていること</h2>
+      </div>
+      <ul class="values">
+        <li class="value">
+          <span class="em">DESIGN</span>
+          <h3>デザインを大事にしています</h3>
+          <p>毎月、新しいカラーを入れています。決められたデザインをなぞる仕事ではありません。やってみたいものがあれば、試してください。それがそのまま、お店の引き出しになります。</p>
+        </li>
+        <li class="value">
+          <span class="em">TALK</span>
+          <h3>聞けないことが、聞ける環境です</h3>
+          <p>技術のこと、接客のこと。「これ、どうしてるんだろう」と思っても、なかなか人に聞けないままのこと。Genieは、そういうことを気軽に話せる場所でありたいと思っています。</p>
+        </li>
+        <li class="value">
+          <span class="em">PACE</span>
+          <h3>詰め込まない予約枠</h3>
+          <p>お客様は1日3〜5名ほど。回転を上げるより、「またお願いしたい」と思っていただくこと。そちらを選んできました。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="plans-title">
+    <div class="container">
+      <div class="head">
+        <p class="head-en">WORK STYLE</p>
+        <h2 class="head-title" id="plans-title">3つの働き方から選べます</h2>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <div class="plan-head">
+            <p class="plan-en">SHARE SALON</p>
+            <h3>シェアサロン</h3>
+            <p class="plan-for">プロとして自由に活動したい方へ</p>
+          </div>
+          <p class="plan-pay">月額30,000円＋売上80%還元</p>
+          <dl>
+            <dt>しくみ</dt><dd>価格設定とブランディングはサロンにお任せ。接客と技術に専念できます</dd>
+            <dt>出勤</dt><dd>自由出勤（9:00〜21:00）</dd>
+            <dt>サポート</dt><dd>集客サポートあり。アイデザイナーは技術サポートあり</dd>
+          </dl>
+        </article>
+        <article class="plan">
+          <div class="plan-head">
+            <p class="plan-en">CONTRACT</p>
+            <h3>業務委託</h3>
+            <p class="plan-for">安定してスタートしたい方へ</p>
+          </div>
+          <p class="plan-pay">最大60%還元（最低保証あり）</p>
+          <dl>
+            <dt>報酬の目安</dt><dd>月15万円〜50万円</dd>
+            <dt>出勤</dt><dd>自由出勤（9:00〜21:00）</dd>
+          </dl>
+        </article>
+        <article class="plan">
+          <div class="plan-head">
+            <p class="plan-en">PART-TIME</p>
+            <h3>パート</h3>
+            <p class="plan-for">家庭やプライベートと両立したい方へ</p>
+          </div>
+          <p class="plan-pay">時給1,110円〜1,500円</p>
+          <dl>
+            <dt>勤務</dt><dd>希望シフト制（10:00〜16:00・1日6時間）</dd>
+            <dt>通勤</dt><dd>駐車場手当 月4,000円</dd>
+          </dl>
+        </article>
+      </div>
+      <p class="note">※条件は、2026年10月時点の求人情報とInstagramの投稿をもとにした仮の内容です。</p>
+    </div>
+  </section>
+
+  <section class="section tint" aria-labelledby="sim-title">
+    <div class="container narrow">
+      <div class="head">
+        <p class="head-en">SIMULATION</p>
+        <h2 class="head-title" id="sim-title">どの働き方が合っている？</h2>
+      </div>
+      <div class="sim">
+        <p class="sim-q">「今の指名数だと、どの働き方が一番おトク？」</p>
+        <p class="sim-sub">月の売上の見込みを動かすと、手取りの目安を比べられます。</p>
+        <label for="sales">月の売上の見込み</label>
+        <output class="sim-value" id="salesOut" for="sales">300,000円</output>
+        <input type="range" id="sales" min="50000" max="800000" step="10000" value="300000">
+        <div class="sim-scale" aria-hidden="true"><span>5万円</span><span>80万円</span></div>
+        <div class="sim-results">
+          <div class="result" id="resShare">
+            <div class="result-name">シェアサロン<span class="result-badge" id="badgeShare" hidden>多い</span></div>
+            <div class="result-formula">売上 × 80% − 月額30,000円</div>
+            <span class="result-amount" id="amtShare">210,000円</span>
+          </div>
+          <div class="result" id="resContract">
+            <div class="result-name">業務委託<span class="result-badge" id="badgeContract" hidden>多い</span></div>
+            <div class="result-formula">売上 × 60%（最大還元率で計算）</div>
+            <span class="result-amount" id="amtContract">180,000円</span>
+          </div>
+        </div>
+        <p class="sim-msg" id="simMsg" aria-live="polite"></p>
+        <p class="sim-fine">※公開されている条件だけで計算した目安です。業務委託は最大の還元率（60%）で計算しており、最低保証や実際の還元率は含みません。材料費・税金なども含まないため、実際の金額とは異なります。詳しくは見学・面談の際にご相談ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="perks-title">
+    <div class="container">
+      <div class="head">
+        <p class="head-en">BENEFITS</p>
+        <h2 class="head-title" id="perks-title">働く環境</h2>
+      </div>
+      <ul class="perks">
+        <li>研修・セミナー参加の費用補助</li>
+        <li>資格取得支援（受験費用の補助）</li>
+        <li>社員割引（店内商品）</li>
+        <li>マイカー通勤OK・駐車場あり</li>
+        <li>エプロン支給</li>
+        <li>服装・髪色自由</li>
+        <li>最新の商材を取り入れています</li>
+        <li>亀田駅から車で3分</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section tint" aria-labelledby="staff-title">
+    <div class="container">
+      <div class="head">
+        <p class="head-en">STAFF</p>
+        <h2 class="head-title" id="staff-title">個性派スタッフが集うサロンです</h2>
+      </div>
+      <div class="staff">
+        <div class="photo-slot">スタッフ紹介<br>（写真・ひとこと）</div>
+        <div class="photo-slot">スタッフ紹介<br>（写真・ひとこと）</div>
+        <div class="photo-slot">スタッフ紹介<br>（写真・ひとこと）</div>
+      </div>
+      <p class="note">※スタッフの紹介は、掲載の可否をご相談のうえで入れる想定です。</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="wants-title">
+    <div class="container narrow">
+      <div class="head">
+        <p class="head-en">WHO WE WANT</p>
+        <h2 class="head-title" id="wants-title">こんな方をお待ちしています</h2>
+      </div>
+      <ul class="wants">
+        <li>「こんな感じ」というお客様の言葉から、一緒にイメージを探せる方</li>
+        <li>もっと上手くなりたいと思っている方</li>
+        <li>教わったことを、まず一度やってみられる方</li>
+        <li>お約束した日時を守り、責任を持って働ける方</li>
+        <li>Genieで長く続けていきたい方</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section cta" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="head">
+        <p class="head-en">ENTRY</p>
+        <h2 class="head-title" id="cta-title">まずは一度、お話ししませんか</h2>
+      </div>
+      <p class="cta-lead">あなたの理想のワークライフバランスに合わせて、最適なプランを一緒に考えます。サロン見学も随時受け付けています。</p>
+      <div class="btns">
+        <a class="btn btn-light" href="#">LINEで相談する</a>
+        <a class="btn btn-line" href="#">InstagramのDMで相談する</a>
+      </div>
+      <p class="cta-info">Genie — beauty design works —<br>新潟市江南区亀田四ツ興野5丁目1-29 ペア5</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="brand"><span class="brand-name">Genie</span></p>
+  <p>まつエク・アイブロウ・WAX脱毛・ネイル</p>
+</footer>
+
+<script>
+(function () {
+  var input = document.getElementById('sales');
+  var yen = function (n) { return Math.max(0, Math.round(n)).toLocaleString('ja-JP') + '円'; };
+  function update() {
+    var s = Number(input.value);
+    var share = s * 0.8 - 30000;
+    var contract = s * 0.6;
+    document.getElementById('salesOut').textContent = yen(s);
+    document.getElementById('amtShare').textContent = yen(share);
+    document.getElementById('amtContract').textContent = yen(contract);
+    var shareBest = share > contract, contractBest = contract > share;
+    document.getElementById('resShare').classList.toggle('best', shareBest);
+    document.getElementById('resContract').classList.toggle('best', contractBest);
+    document.getElementById('badgeShare').hidden = !shareBest;
+    document.getElementById('badgeContract').hidden = !contractBest;
+    var msg;
+    if (shareBest) msg = '月の売上が15万円を超えると、シェアサロンの方が手取りの目安が多くなります。';
+    else if (contractBest) msg = '月の売上が15万円未満なら、業務委託の方が手取りの目安が多くなります。最低保証もあるので、安定して始めたい方に向いています。';
+    else msg = '月の売上がちょうど15万円のとき、2つの働き方の手取りの目安が同じになります。';
+    document.getElementById('simMsg').textContent = msg;
+  }
+  input.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>
